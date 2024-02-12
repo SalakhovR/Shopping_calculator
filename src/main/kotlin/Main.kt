@@ -1,4 +1,7 @@
 fun main(args: Array<String>) {
+    println("1. Посчитать стоимость продуктовой корзины\n" +
+            "2. Оплатить покупку\n" +
+            "3. Отменить покупку\n")
 
     var userChoice = readln()
 
