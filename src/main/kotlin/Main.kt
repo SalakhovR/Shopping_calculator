@@ -1,19 +1,9 @@
-fun main(args: Array<String>) {
-    println("1. Посчитать стоимость продуктовой корзины\n" +
-            "2. Оплатить покупку\n" +
-            "3. Отменить покупку\n")
+fun main() {
+    val productsArray = arrayOf("Макарошки", "Гречка", "Сало", "Пшено", "Рис", "Кусок металла")
+    val productsCostArray = arrayOf(14, 69, 240, 31, 46, 10000)
 
-    var userChoice = readln()
+    val inputProduct = readln()
+    val costProduct = productsCostArray[productsArray.indexOf(inputProduct)]
 
-    when(userChoice) {
-        "Анализ" -> {
-            println("Идет анализ продуктовой корзины")
-        }
-        "Оплата" -> {
-            println("Происходит процесс оплаты")
-        }
-        "Отмена" -> {
-            println("Идет отмена покупки")
-        }
-    }
+    println("Товар \"$inputProduct\" стоит $costProduct кредитов")
 }
